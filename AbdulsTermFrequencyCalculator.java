@@ -25,8 +25,7 @@ public class TermFrequencyCalculator implements ITermFrequency {
             // by total number of words in the lyric
             
             for (String word : words)
-                // Check if the word is empty after removing special characters
-                if (!word.isEmpty()) {
+                // Check if the word is empty 
                     // Update the TF value for this word in the current song
                     if (tempMap.containsKey(word)) {
                         tempMap.put(word, tempMap.get(word) + 1.0);
